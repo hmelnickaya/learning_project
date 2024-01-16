@@ -1,8 +1,8 @@
-name: Bug Report
-description: File a bug report
+name: Новая проблема
+description: Новая проблема по шаблону из формы
 title: "[Bug]: "
 labels: ["bug", "triage"]
-projects: ["octo-org/1", "octo-org/44"]
+projects: ["Проект сайта", "Онлайн-магазин"]
 assignees:
   - octocat
 body:
