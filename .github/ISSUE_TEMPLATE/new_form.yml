@@ -49,15 +49,25 @@ body:
     id: severity
     attributes:
       label: Критичность
-      description: Насколько проблема важна
+      description: Критичность проблемы
       options:
-        - Низкая
-        - Средняя
-        - Высокая
         - Блокирующая
+        - Неблокирующая
       default: 0
     validations:
-      required: true    
+      required: true   
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Приоритет
+      description: Приоритет проблемы
+      options:
+        - Низкий
+        - Средний
+        - Высокий
+      default: 0
+    validations:
+      required: true        
   - type: dropdown
     id: operating_systems
     attributes:
