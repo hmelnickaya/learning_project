@@ -10,6 +10,16 @@ body:
     attributes:
       value: |
         Заполните баг репорт
+  - type: dropdown
+    id: project
+    attributes:
+      label: Project
+      description: Проект
+      options:
+        - Онлайн магазин
+        - Сайт компании
+    validations:
+      required: true        
   - type: textarea
     id: what_happened
     attributes:
