@@ -10,7 +10,7 @@ body:
     attributes:
       value: |
         Заполните баг репорт
-   - type: dropdown
+  - type: dropdown
      id: project
      attributes:
       label: Project
@@ -21,7 +21,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: what-happened
+    id: what_happened
     attributes:
       label: What happened?
       description: Also tell us, what did you expect to happen?
