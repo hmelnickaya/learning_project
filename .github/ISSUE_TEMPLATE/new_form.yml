@@ -1,7 +1,7 @@
 name: Новая проблема
 description: Новая проблема по шаблону из формы
 title: "[Bug]: "
-labels: ["bug", "triage"]
+labels: ["bug"]
 projects: ["Проект сайта", "Онлайн-магазин"]
 assignees:
   - octocat
