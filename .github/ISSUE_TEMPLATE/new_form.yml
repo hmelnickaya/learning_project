@@ -49,7 +49,7 @@ body:
         - Safari
         - Microsoft Edge
         
-    - type: textarea
+  - type: textarea
     id: steps_to_reproduce
     attributes:
       label: Шаги воспроизведения
