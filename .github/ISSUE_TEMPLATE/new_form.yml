@@ -9,15 +9,17 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this bug report!
-  - type: input
-    id: contact
-    attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+        Заполните баг репорт
+   - type: dropdown
+     id: project
+     attributes:
+      label: Project
+      description: Проект
+      options:
+        - Онлайн магазин
+        - Сайт компании
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
@@ -31,24 +33,36 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: Номер версии
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
-      default: 0
+        - 1.0
+        - 1.1
+        - 2.0
+      default: 1.0
     validations:
       required: true
   - type: dropdown
+    id: operating_systems
+    attributes:
+      label: В какой операционной системе вы увидели проблему
+      multiple: true
+      options:
+        - Windows 11
+        - Windows 10
+        - Windows 8 or earlier
+        - Linux    
+        - Mac OS X 14 (Somona)  
+        - Mac OS X 13 or earlier  
+  - type: dropdown
     id: browsers
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: В каком браузере вы увидели проблему
       multiple: true
       options:
         - Firefox
         - Chrome
         - Safari
-        - Microsoft Edge
-        
+        - Microsoft Edge     
   - type: textarea
     id: steps_to_reproduce
     attributes:
