@@ -20,6 +20,17 @@ body:
         - Сайт компании
     validations:
       required: true        
+  - type: dropdown
+    id: component
+    attributes:
+      label: Компонент приложения
+      description: В каком компоненте приложения найдена ошибка
+      options:
+        - Окно регистрации на сайте
+        - Форма логина
+        - Другое
+    validations:
+      required: true 
   - type: textarea
     id: what_happened
     attributes:
